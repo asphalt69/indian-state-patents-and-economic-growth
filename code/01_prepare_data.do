@@ -14,8 +14,12 @@ global output "$project\state_panel.dta"
 
 
 * 2. Import source data
+capture confirm file "$source"
+if _rc != 0 {
+    display as error "Source file not found: $source"
+    exit 601
+}
 import excel "$source", sheet("Sheet1") firstrow clear
-
 * 3. Construct state identifier
 encode viirs_state_matched, gen(state_id)
 
