@@ -6,9 +6,9 @@ set more off
 version 17.0
 
 * 1. Configure project paths
-global project "C:\Users\Sashank Mohan\Desktop"
+global project "."
 global input "$project\state_panel.dta"
-global output "$project\patent_regressions.tex"
+global output "$project\results\patent_regressions.tex"
 
 * 2. Load prepared data
 use "$input", clear
