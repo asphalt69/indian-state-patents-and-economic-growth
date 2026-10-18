@@ -1,0 +1,25 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Lagged Patent Activity and State-Level Growth}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{NTL Growth}&\multicolumn{1}{c}{GSDP per Capita Growth}&\multicolumn{1}{c}{Electricity per Capita Growth}\\
+\hline
+L.ln\_patents\_comp&      0.0381\sym{***}&     0.00419         &      0.0233\sym{*}  \\
+            &    (0.0114)         &   (0.00406)         &    (0.0116)         \\
+[1em]
+\_cons      &      -0.113\sym{*}  &      0.0259         &     -0.0701         \\
+            &    (0.0552)         &    (0.0196)         &    (0.0560)         \\
+\hline
+Observations&         215         &         215         &         215         \\
+R-squared   &       0.414         &       0.628         &       0.264         \\
+Adjusted R-squared&       0.303         &       0.558         &       0.125         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize State fixed effects: Yes}\\
+\multicolumn{4}{l}{\footnotesize Year fixed effects: Yes}\\
+\multicolumn{4}{l}{\footnotesize Standard errors clustered by state.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

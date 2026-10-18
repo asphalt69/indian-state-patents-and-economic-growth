@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Economic Growth and Subsequent Patent Activity}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{Prior GSDP Growth}&\multicolumn{1}{c}{Prior NTL Growth}&\multicolumn{1}{c}{Joint Model}\\
+\hline
+L.d\_ln\_gsdp\_pc&       2.173\sym{**} &                     &       2.158\sym{**} \\
+            &     (0.818)         &                     &     (0.809)         \\
+[1em]
+L.d\_ln\_ntl  &                     &      -0.201         &      -0.168         \\
+            &                     &     (0.385)         &     (0.375)         \\
+[1em]
+\_cons      &       5.020\sym{***}&       5.146\sym{***}&       5.032\sym{***}\\
+            &    (0.0387)         &    (0.0241)         &    (0.0375)         \\
+\hline
+Observations&         269         &         270         &         269         \\
+R-squared   &       0.962         &       0.961         &       0.962         \\
+Adjusted R-squared&       0.956         &       0.955         &       0.956         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize State fixed effects: Yes}\\
+\multicolumn{4}{l}{\footnotesize Year fixed effects: Yes}\\
+\multicolumn{4}{l}{\footnotesize Standard errors clustered by state.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
