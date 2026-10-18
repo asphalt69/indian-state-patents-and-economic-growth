@@ -9,8 +9,9 @@ version 17.0
 * 1. Set project directory
 * Change this path on your computer if necessary
 global project "."
-global source "$project\Test.xlsx"
+global source "$project\data\Test.xlsx"
 global output "$project\state_panel.dta"
+
 
 * 2. Import source data
 import excel "$source", sheet("Sheet1") firstrow clear
