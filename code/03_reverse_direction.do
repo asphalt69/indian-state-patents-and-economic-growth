@@ -6,9 +6,9 @@ set more off
 version 17.0
 
 * 1. Configure project paths
-global project "C:\Users\Sashank Mohan\Desktop"
+global project "."
 global input "$project\state_panel.dta"
-global output "$project\reverse_direction_results.tex"
+global output "$project\results\reverse_direction_results.tex"
 capture mkdir "$project\results"
 
 * 2. Load prepared data
