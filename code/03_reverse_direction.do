@@ -10,6 +10,7 @@ global project "C:\Users\Sashank Mohan\Desktop"
 global input "$project\state_panel.dta"
 global output "$project\reverse_direction_results.tex"
 
+
 * 2. Load prepared data
 use "$input", clear
 xtset state_id year
