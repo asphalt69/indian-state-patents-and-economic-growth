@@ -9,7 +9,7 @@ version 17.0
 global project "C:\Users\Sashank Mohan\Desktop"
 global input "$project\state_panel.dta"
 global output "$project\reverse_direction_results.tex"
-
+capture mkdir "$project\results"
 
 * 2. Load prepared data
 use "$input", clear
