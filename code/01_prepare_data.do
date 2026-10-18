@@ -8,7 +8,7 @@ version 17.0
 
 * 1. Set project directory
 * Change this path on your computer if necessary
-global project "C:\Users\Sashank Mohan\Desktop"
+global project "."
 global source "$project\Test.xlsx"
 global output "$project\state_panel.dta"
 
